@@ -1,21 +1,15 @@
 package pw.moter8.interactivestory.model;
 
 import pw.moter8.interactivestory.R;
-import pw.moter8.interactivestory.ui.MainActivity;
 
 public class Story {
 
     private Page[] mPages;
 
-    String[] mFacts = MainActivity.getResources().getStringArray(R.array.myPageBook);
-    //Non-static method getResources() cannot be referenced from a static context
-
-
 
 
     public Story() {
 
-        MainActivity.getPageText(1);
 
         mPages = new Page[7];
 

@@ -18,6 +18,8 @@ public class MainActivity extends ActionBarActivity {
 
     private EditText mNameField;
     private Button mStartButton;
+    private String[] mPageText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends ActionBarActivity {
 
         mNameField = (EditText) findViewById(R.id.userNameText);
         mStartButton = (Button) findViewById(R.id.beginStoryButton);
+        mPageText = getResources().getStringArray(R.array.myPageBook);
 
         //mFacts = getResources().getStringArray(R.array.myFactBook);
 
@@ -54,11 +57,6 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    public static String getPageText(int page) {
-        String[] mFacts;
-        mFacts = getResources().getStringArray(R.array.myPageBook);
-        return mFacts[page];
-    }
 
 
     @Override
