@@ -18,7 +18,6 @@ public class MainActivity extends ActionBarActivity {
 
     private EditText mNameField;
     private Button mStartButton;
-    private String[] mFacts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +54,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
-    public String getPageText(int page) {
+    public static String getPageText(int page) {
         String[] mFacts;
         mFacts = getResources().getStringArray(R.array.myPageBook);
         return mFacts[page];
@@ -67,4 +66,5 @@ public class MainActivity extends ActionBarActivity {
         super.onResume();
         mNameField.setText("");
     }
+
 }
