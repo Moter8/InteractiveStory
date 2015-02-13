@@ -1,14 +1,19 @@
 package pw.moter8.interactivestory.model;
 
+
 import pw.moter8.interactivestory.R;
+
 
 public class Story {
 
     private Page[] mPages;
+    private String mPageText[];
 
 
 
-    public Story() {
+    public Story(String pageText[]) {
+
+        mPageText = pageText;
 
 
         mPages = new Page[7];
@@ -21,7 +26,7 @@ public class Story {
 
         mPages[1] = new Page(
                 R.drawable.page1,
-                "You deftly land your ship near where the distress signal originated. You didn't notice anything strange on your fly-by, but there is a cave in front of you. Behind you is an abandoned rover from the early 21st century.",
+                mPageText[1],
                 new Choice("Explore the cave", 3),
                 new Choice("Explore the rover", 4));
 

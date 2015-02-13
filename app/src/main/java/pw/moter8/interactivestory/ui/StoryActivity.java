@@ -15,7 +15,7 @@ import pw.moter8.interactivestory.model.Story;
 
 public class StoryActivity extends ActionBarActivity {
 
-    private Story mStory = new Story();
+    private Story mStory;
     private ImageView mImageView;
     private TextView mTextView;
     private Button mChoice1;
@@ -31,6 +31,8 @@ public class StoryActivity extends ActionBarActivity {
 
         Intent intent = getIntent();
         mName = intent.getStringExtra("name");
+        String mPageText[] = intent.getStringArrayExtra("pageText");
+        mStory = new Story(mPageText);
 
         if (mName == null) {
             mName = "Friend";

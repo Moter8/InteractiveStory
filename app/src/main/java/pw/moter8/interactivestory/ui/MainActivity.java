@@ -13,12 +13,11 @@ import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 import pw.moter8.interactivestory.R;
 
-
 public class MainActivity extends ActionBarActivity {
 
     private EditText mNameField;
     private Button mStartButton;
-    private String[] mPageText;
+    private String mPageBook[] = getResources().getStringArray(R.array.myPageBook);
 
 
     @Override
@@ -29,14 +28,12 @@ public class MainActivity extends ActionBarActivity {
 
         mNameField = (EditText) findViewById(R.id.userNameText);
         mStartButton = (Button) findViewById(R.id.beginStoryButton);
-        mPageText = getResources().getStringArray(R.array.myPageBook);
-
-        //mFacts = getResources().getStringArray(R.array.myFactBook);
 
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String name = mNameField.getText().toString();
+
 
                 if (name.equals("") || (name.length() <= 2)) {
                     Toast.makeText(MainActivity.this, getString(R.string.enter_name_reminder), Toast.LENGTH_SHORT).show();
@@ -53,10 +50,10 @@ public class MainActivity extends ActionBarActivity {
     private void startStory(String name) {
         Intent intent = new Intent(this, StoryActivity.class);
         intent.putExtra("name", name);
+        intent.putExtra("pageText", mPageBook);
         startActivity(intent);
 
     }
-
 
 
     @Override
