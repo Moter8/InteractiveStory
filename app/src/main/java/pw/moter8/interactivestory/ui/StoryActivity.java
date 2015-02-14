@@ -1,6 +1,7 @@
 package pw.moter8.interactivestory.ui;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -15,13 +16,14 @@ import pw.moter8.interactivestory.model.Story;
 
 public class StoryActivity extends ActionBarActivity {
 
-    private Story mStory = new Story();
+    private Story mStory;
     private ImageView mImageView;
     private TextView mTextView;
     private Button mChoice1;
     private Button mChoice2;
     private String mName;
     private Page mCurrentPage;
+    public Resources res;
 
 
     @Override
@@ -29,14 +31,16 @@ public class StoryActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
 
+        res = getResources();
+
+        mStory = new Story(res);
+
         Intent intent = getIntent();
         mName = intent.getStringExtra("name");
 
         if (mName == null) {
             mName = "Friend";
         }
-
-        // Toast.makeText(StoryActivity.this, mName, Toast.LENGTH_SHORT).show();
 
         mImageView = (ImageView) findViewById(R.id.storyImageView);
         mTextView = (TextView) findViewById(R.id.storyTextView);

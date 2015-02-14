@@ -30,8 +30,6 @@ public class MainActivity extends ActionBarActivity {
         mNameField = (EditText) findViewById(R.id.userNameText);
         mStartButton = (Button) findViewById(R.id.beginStoryButton);
 
-        String[] mBook = getResources().getStringArray(R.array.myPageBook);
-
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,6 +39,8 @@ public class MainActivity extends ActionBarActivity {
                     Toast.makeText(MainActivity.this, getString(R.string.enter_name_reminder), Toast.LENGTH_SHORT).show();
                 } else if (name.equals("Iliyan")) {
                     throw new RuntimeException("Iliyans no pueden usar la app!");
+                } else if (name.equals("Pyry") || name.equals("Shurjo") || name.equals("Borja")) {
+                    Toast.makeText(MainActivity.this, getString(R.string.friend_greet), Toast.LENGTH_SHORT).show();
                 } else {
                     startStory(name);
                 }

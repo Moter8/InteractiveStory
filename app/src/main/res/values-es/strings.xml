@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Aventura Marciana</string>
+    <string name="app_name">Interactive Story</string>
 
     <string name="hello_world">Bienvenido!</string>
     <string name="action_settings">Opciones</string>
@@ -9,15 +9,32 @@
     <string name="enter_name_reminder">Entra tu Nombre</string>
     <string name="title_activity_story">Aventura Marciana</string>
     <string name="play_again_button">Jugar otra Vez</string>
+    <string name="friend_greet">Te conozco!</string>
 
     <string-array name="myPageBook">
-        <item>"En tu return trip from studying Saturn's rings, you hear a distress signal that seems to be coming from the surface of Mars. It's strange because there hasn't been a colony there in years. Even stranger, it's calling you by name: \"Help me, %1$s, you're my only hope.\""</item>
-        <item>"You deftly land your ship near where the distress signal originated. You didn't notice anything strange on your fly-by, but there is a cave in front of you. Behind you is an abandoned rover from the early 21st century."</item>
-        <item>"You continue your course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low."</item>
-        <item>"Your EVA suit is equipped with a headlamp, which you use to navigate the cave. After searching for a while your oxygen levels are starting to get pretty low. You know you should go refill your tank, but there's a very faint light up ahead."</item>
-        <item>"The rover is covered in dust and most of the solar panels are broken. But you are quite surprised to see the on-board system booted up and running. In fact, there is a message on the screen: \"%1$s, come to 28.543436, -81.369031.\" Those coordinates aren't far, but you don't know if your oxygen will last there and back."</item>
-        <item>"After a long walk slightly uphill, you end up at the top of a small crater. You look around, and are overjoyed to see your favorite android, %1$s-S1124. It had been lost on a previous mission to Mars! You take it back to your ship and fly back to Earth."</item>
-        <item>"You arrive home on Earth. While your mission was a success, you forever wonder what was sending that signal. Perhaps a future mission will be able to investigate…"</item>
+        <item>"En tu viaje de regreso desde el estudio de los Anillos de Saturno, oyes una señal de socorro que parece venir de la superficie de Marte. Es extraño porque no ha habido una colonia allí en años. Aún más extraño, te está llamando por tu nombre: \"Ayúdame, %1$s, eres mi única esperanza.\""</item>
+        <item>"Hábilmente aterrizas tu nave cerca de donde se originó la señal de socorro. No notaste nada extraño durante el vuelo, pero hay una cueva en frente de ti. Detrás tuya está un Rover abandonadol de principios del Siglo 21."</item>
+        <item>"Sigues tu curso hacia la Tierra. Dos días más tarde, recibes una transmisión de la Sede diciendo que han detectado algún tipo de anomalía en la superficie de Marte, cerca de una estación móvil abandonada. Te piden que investigues, pero en última instancia la decisión es tuya porque tu misión ya se ha ejecutado durante mucho más tiempo de lo previsto y los suministros están bajos."</item>
+        <item>"Tu traje espacial está equipado con un faro que utilizas para navegar por la cueva. Después de buscar durante un tiempo tus niveles de oxígeno están empezando a ser bastante bajas. Sabes que debes rellenar tu tanque, pero hay una luz muy tenue adelante."</item>
+        <item>"El Rover está cubierto de polvo y la mayoría de los paneles solares están rotos. Pero eres bastante sorprendido de ver el sistema de a bordo arrancado y funcionando. De hecho, hay un mensaje en la pantalla: \"%1$s, vente a 28.543436, -81.369031.\" Esas coordenadas no están muy lejos, pero no sabes si tu oxígeno durará ida y vuelta."</item>
+        <item>"Después de un largo paseo algo cuesta arriba, llegas a la parte superior de un pequeño cráter. Miras a tu alrededor, y estás encantado de ver a tu robot favorito, %1$s-S1124. Se había perdido en una misión anterior a Marte! Lo llevas de nuevo a tu nave y vuelas con él de vuelta a la Tierra."</item>
+        <item>"Llegas a tu casa en la Tierra. Mientras que la misión fue un éxito, siempre te preguntarás lo que enviaba esa señal. Quizás una futura misión será capaz de investigar…</item>
+    </string-array>
+
+    <string-array name="myChoice1">
+        <item>"Parar y investigar"</item>
+        <item>"Explorar la cueva"</item>
+        <item>"Volver a Marte para investigar"</item>
+        <item>"Rellenar el oxígeno y identificar el Rover"</item>
+        <item>"Explorar las coordinadas"</item>
+    </string-array>
+
+    <string-array name="myChoice2">
+        <item>"Continuar vuelta hacia Tierra"</item>
+        <item>"Identificar el Rover"</item>
+        <item>"Continuar vuelta hacia Tierra"</item>
+        <item>"Continuar hacia la luz tenue"</item>
+        <item>"Volver a Tierra"</item>
     </string-array>
 
 </resources>
