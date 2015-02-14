@@ -6,10 +6,7 @@ public class Story {
 
     private Page[] mPages;
 
-
-
     public Story() {
-
 
         mPages = new Page[7];
 

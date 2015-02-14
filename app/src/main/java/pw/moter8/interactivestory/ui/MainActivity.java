@@ -18,7 +18,7 @@ public class MainActivity extends ActionBarActivity {
 
     private EditText mNameField;
     private Button mStartButton;
-    private String[] mPageText;
+    public String[] mBook;
 
 
     @Override
@@ -29,9 +29,8 @@ public class MainActivity extends ActionBarActivity {
 
         mNameField = (EditText) findViewById(R.id.userNameText);
         mStartButton = (Button) findViewById(R.id.beginStoryButton);
-        mPageText = getResources().getStringArray(R.array.myPageBook);
 
-        //mFacts = getResources().getStringArray(R.array.myFactBook);
+        String[] mBook = getResources().getStringArray(R.array.myPageBook);
 
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,8 +55,6 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
 
     }
-
-
 
     @Override
     protected void onResume() {
